@@ -35,9 +35,13 @@ You will just need Docker installed on your machine
    ```sh
    git clone git@github.com:samuelcasanova/docker-official-tutorial.git
    ```
-2. Run the selected docker, i.e.
+2. Build the docker image
    ```sh
-   docker run example
+   docker build -t docker-101 .
+   ```
+3. Run the docker container
+   ```sh
+   docker run -dp 3000:3000 docker-101
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
